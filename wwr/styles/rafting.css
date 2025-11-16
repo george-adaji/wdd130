@@ -3,8 +3,14 @@
   --secondary-color: #A23B72;
   --accent1-color: #F18F01;
   --accent2-color: #C73E1D;
+
+  /* Fonts */
   --heading-font: 'Georgia', 'Times New Roman', serif;
   --body-font: 'Arial', 'Helvetica', sans-serif;
+
+  /* NEW: High-contrast text colors */
+  --light-text: #ffffff;
+  --dark-text: #222222;
 }
 
 * {
@@ -15,15 +21,17 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--dark-text); /* FIX: replaced low-contrast accent text */
   line-height: 1.6;
 }
 
+/* Center layout */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
+/* HEADER */
 header {
   background-color: var(--primary-color);
   padding: 20px;
@@ -37,8 +45,9 @@ header img {
   height: auto;
 }
 
+/* NAV LINKS */
 nav a {
-  color: white;
+  color: var(--light-text);
   text-decoration: none;
   margin-left: 20px;
   padding: 10px;
@@ -47,14 +56,17 @@ nav a {
 nav a:hover {
   background-color: var(--accent1-color);
   border-radius: 5px;
+  color: var(--dark-text); /* FIX: improves hover contrast */
 }
 
+/* HEADINGS */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
   margin-bottom: 15px;
 }
 
+/* HERO SECTION */
 .hero {
   position: relative;
   margin-bottom: 30px;
@@ -66,26 +78,30 @@ h1, h2 {
   height: auto;
 }
 
+/* HERO TITLE */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.9;
-  background-color: var(--accent1-color);
-  color: white;
+  opacity: 1;
+  background-color: var(--primary-color); /* FIX: changed for contrast */
+  color: var(--light-text);
 }
 
+/* HERO ARTICLE */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgb(255 255 255 / 0.9);
+  background-color: rgba(255, 255, 255, 0.97); /* FIX: increased readability */
   padding: 20px;
   max-width: 80%;
+  color: var(--dark-text); /* FIX: replaced low contrast orange text */
 }
 
+/* ARTICLE IMAGE */
 .hero article img {
   float: right;
   width: 125px;
@@ -93,16 +109,19 @@ h1, h2 {
   border-radius: 5px;
 }
 
+/* SECTIONS */
 section {
   margin: 30px 0;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 5px;
+  color: var(--dark-text); /* FIX: replaced low-contrast text color */
 }
 
+/* FOOTER */
 footer {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-text);
   padding: 20px;
   text-align: center;
   display: flex;
@@ -110,6 +129,7 @@ footer {
   align-items: center;
 }
 
+/* SOCIAL MEDIA */
 .socialmedia a {
   text-decoration: none;
   margin-left: 10px;
