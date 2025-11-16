@@ -25,7 +25,8 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
+        <h1>Contact Us – White Water Rafting Co.</h1>
+
 
         <!-- Company Information -->
         <section class="company-info">
@@ -77,17 +78,29 @@
 
                 <fieldset>
                     <legend>Purpose of Your Message</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required> General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label class="checkbox-row">
-                    <input type="checkbox" name="subscribe">
+                <label for="subscribe" class="checkbox-row">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
+                </label>
+
+
                 </label>
 
                 <button type="submit" class="submit-btn">Send Message</button>
