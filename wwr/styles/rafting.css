@@ -1,11 +1,11 @@
-/* REQUIRED BY AUDIT — universal reset */
+/* ===== UNIVERSAL RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* REQUIRED — CSS variables in :root */
+/* ===== CSS VARIABLES ===== */
 :root {
   --primary-color: #333;
   --accent-color: #0077cc;
@@ -16,6 +16,9 @@
 header {
   background-color: white;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header img {
@@ -26,25 +29,34 @@ header img {
 nav a {
   text-decoration: none;
   color: var(--primary-color);
-  padding: .5rem;
+  padding: 0.5rem;
+}
+
+nav a:focus,
+nav a:hover {
+  color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 /* ===== HERO ===== */
 .hero {
   position: relative; /* REQUIRED by audit */
+  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
   display: block;
+  height: auto;
 }
 
-/* Overlay to fix white-on-white contrast */
+/* Overlay for text contrast */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55); /* slightly darker for readability */
 }
 
 .hero h1 {
@@ -52,8 +64,8 @@ nav a {
   top: 15%;
   left: 5%;
   color: white;
-  font-size: 2rem;
-  text-shadow: 0 0 6px rgba(0,0,0,0.8);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
 
 .hero article {
@@ -62,12 +74,12 @@ nav a {
   left: 5%;
   right: 5%;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   padding: 1rem;
   border-radius: 6px;
 }
 
-/* REQUIRED — float the article image right */
+/* Float the article image right */
 .hero article img {
   width: 120px;
   float: right; /* REQUIRED */
@@ -94,14 +106,14 @@ h2 {
 
 .adventure-gallery img {
   width: 100%;
-  height: 140px;
+  aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 6px;
 }
 
 .adventure-gallery figure {
   background: var(--light-bg);
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 6px;
   text-align: center;
 }
@@ -111,10 +123,11 @@ footer {
   background: #f0f0f0;
   padding: 1rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
 footer p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 footer nav.socialmedia a {
@@ -123,7 +136,12 @@ footer nav.socialmedia a {
 
 .socialmedia img {
   width: 32px;
-  height: auto;
-  border-radius: 6px;
-  margin-right: .5rem;
+  height: 32px;
+  border-radius: 50%; /* circular icons for social media */
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
 }
