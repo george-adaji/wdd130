@@ -1,18 +1,18 @@
-/* ===== UNIVERSAL RESET ===== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== CSS VARIABLES ===== */
+
 :root {
   --primary-color: #333;
   --accent-color: #0077cc;
   --light-bg: #f8f8f8;
 }
 
-/* ===== HEADER ===== */
+
 header {
   background-color: white;
   padding: 1rem;
@@ -39,9 +39,9 @@ nav a:hover {
   outline-offset: 2px;
 }
 
-/* ===== HERO ===== */
+
 .hero {
-  position: relative; /* REQUIRED by audit */
+  position: relative; 
   overflow: hidden;
 }
 
@@ -51,12 +51,12 @@ nav a:hover {
   height: auto;
 }
 
-/* Overlay for text contrast */
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* slightly darker for readability */
+  background: rgba(0, 0, 0, 0.55); 
 }
 
 .hero h1 {
@@ -79,15 +79,15 @@ nav a:hover {
   border-radius: 6px;
 }
 
-/* Float the article image right */
+
 .hero article img {
   width: 120px;
-  float: right; /* REQUIRED */
+  float: right; 
   margin-left: 1rem;
   border-radius: 6px;
 }
 
-/* ===== SECTIONS ===== */
+
 section {
   padding: 1.5rem 1rem;
 }
@@ -97,7 +97,7 @@ h2 {
   color: var(--primary-color);
 }
 
-/* ===== ADVENTURE GALLERY ===== */
+
 .adventure-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -118,7 +118,7 @@ h2 {
   text-align: center;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   background: #f0f0f0;
   padding: 1rem;
@@ -137,7 +137,7 @@ footer nav.socialmedia a {
 .socialmedia img {
   width: 32px;
   height: 32px;
-  border-radius: 50%; /* circular icons for social media */
+  border-radius: 50%; 
   margin-right: 0.5rem;
   transition: transform 0.3s ease;
 }
