@@ -4,42 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Rafting</title>
+    <title>Contact Us: White Water Rafting Co.</title>
 
     <meta name="description"
-        content="Get in touch with White Water Rafting Co. for inquiries, reservations, trip details, and customer assistance. We're here to help.">
+        content="Get in touch with White Water Rafting Co. for inquiries, reservations, trip details, and customer assistance.">
     <meta name="author" content="George Adaji">
 
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-grid">
-            <img src="images/logo.jpg" alt="White Water Rafting Company Logo" width="100">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
+            <a class="logo-link" href="index.html">
+                <img src="images/logo.jpg" alt="White Water Rafting Company Logo" class="logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <h1>Contact Us – White Water Rafting Co.</h1>
+    <main class="container">
+        <h1 class="page-title">Contact Us: White Water Rafting Co.</h1>
 
         <section class="company-info">
             <h2>Company Information</h2>
             <p><strong>Address:</strong> 123 Rapids Road, River Valley, RV 2025</p>
             <p><strong>Phone:</strong> +1 (555) 987-6543</p>
-            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
 
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8452179321496!2d144.95373631531667!3d-37.81627967975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0e3bbfb%3A0x8f9c4b2e0bb916!2sAdventure%20Rafting!5e0!3m2!1sen!2sus!4v1614289467253!5m2!1sen!2sus"
-                    loading="lazy" allowfullscreen="">
-                </iframe>
+                    title="White Water Rafting location map" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -49,17 +54,17 @@
             <div class="team-gallery">
                 <figure>
                     <img src="images/employee1.jpg" alt="Sarah the Lead Guide">
-                    <figcaption>Sarah – Lead Guide</figcaption>
+                    <figcaption>Sarah — Lead Guide</figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee2.jpg" alt="Mike the Safety Officer">
-                    <figcaption>Mike – Safety Officer</figcaption>
+                    <figcaption>Mike — Safety Officer</figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee3.jpg" alt="Anna the Customer Service Manager">
-                    <figcaption>Anna – Customer Service Manager</figcaption>
+                    <figcaption>Anna — Customer Service Manager</figcaption>
                 </figure>
             </div>
         </section>
@@ -67,62 +72,74 @@
         <section class="contact-form">
             <h2>Send Us a Message</h2>
 
-            <form>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
+            <form action="#" method="post" novalidate>
+                <div class="form-row">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <fieldset>
+                <fieldset class="form-fieldset">
                     <legend>Purpose of Your Message</legend>
 
-                    <label for="general">
-                        <input type="radio" id="general" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
+                    <div class="radio-row">
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General inquiry
+                        </label>
 
-                    <label for="reservation">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation question
+                        </label>
 
-                    <label for="suggestion">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website suggestion
+                        </label>
+                    </div>
                 </fieldset>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
 
-                <label for="subscribe" class="checkbox-row">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                <div class="form-row checkbox-row">
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
 
-                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
             </form>
         </section>
-
     </main>
 
-    <footer>
-        <p>&copy; 2025 White Water Rafting Co. | George Adaji</p>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>&copy; 2025 White Water Rafting Co. | George Adaji</p>
 
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.jpg" alt="Follow us on Facebook" width="30">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.jpg" alt="Follow us on Twitter" width="30">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Follow us on Instagram" width="30">
-            </a>
-        </nav>
+            <nav class="socialmedia" aria-label="Social media links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <img src="images/facebook.jpg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                    <img src="images/twitter.jpg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram.jpg" alt="Instagram" class="social-icon">
+                </a>
+            </nav>
+        </div>
     </footer>
-
 </body>
 
 </html>
