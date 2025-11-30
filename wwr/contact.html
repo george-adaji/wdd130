@@ -5,141 +5,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us: White Water Rafting Co.</title>
-
     <meta name="description"
         content="Get in touch with White Water Rafting Co. for inquiries, reservations, trip details, and customer assistance.">
     <meta name="author" content="George Adaji">
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="header-grid">
-            <a class="logo-link" href="index.html">
-                <img src="images/logo.jpg" alt="White Water Rafting Company Logo" class="logo">
-            </a>
-
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html" aria-current="page">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <img src="images/logo.jpg" alt="White Water Rafting Company Logo" class="logo">
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" aria-current="page">Contact Us</a>
+        </nav>
     </header>
 
-    <main class="container">
-        <h1 class="page-title">Contact Us: White Water Rafting Co.</h1>
+    <main>
+        <section class="contact-intro">
+            <h1>Contact Us: White Water Rafting Co.</h1>
+            <p>We’re here to help with questions about trips, reservations, and our services.</p>
+        </section>
 
         <section class="company-info">
             <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 Rapids Road, River Valley, RV 2025</p>
-            <p><strong>Phone:</strong> +1 (555) 987-6543</p>
-            <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
-
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8452179321496!2d144.95373631531667!3d-37.81627967975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0e3bbfb%3A0x8f9c4b2e0bb916!2sAdventure%20Rafting!5e0!3m2!1sen!2sus!4v1614289467253!5m2!1sen!2sus"
-                    title="White Water Rafting location map" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <p>Address</p>
+                    <p>1000 River Run Dr, Rexburg, ID 83440</p>
+                    <p>Phone</p>
+                    <p>(208) 555-0142</p>
+                    <p>Email</p>
+                    <p><a href="mailto:info@wwrafting.example">info@wwrafting.example</a></p>
+                </div>
+                <div class="contact-map">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10944.530536652574!2d-111.784!3d43.823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540f9e3c9d9f7f%3A0x3e2c8c9a2df2f0d!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1700000000000"
+                        width="600" height="350" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
 
-        <section class="employee-team">
-            <h2>Meet Our Team</h2>
-
-            <div class="team-gallery">
+        <section class="profiles">
+            <h2>Our Team</h2>
+            <div class="adventures">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Sarah the Lead Guide">
-                    <figcaption>Sarah — Lead Guide</figcaption>
+                    <img src="images/employee1.jpg" alt="Alex Rivera — Lead Guide" loading="lazy" decoding="async">
+                    <figcaption>Lead Guide — Alex Rivera</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="images/employee2.jpg" alt="Mike the Safety Officer">
-                    <figcaption>Mike — Safety Officer</figcaption>
+                    <img src="images/employee2.jpg" alt="Morgan Lee — Safety Director" loading="lazy" decoding="async">
+                    <figcaption>Safety Director — Morgan Lee</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="images/employee3.jpg" alt="Anna the Customer Service Manager">
-                    <figcaption>Anna — Customer Service Manager</figcaption>
+                    <img src="images/employee3.jpg" alt="Casey Jordan — Reservations Manager" loading="lazy"
+                        decoding="async">
+                    <figcaption>Reservations Manager — Casey Jordan</figcaption>
                 </figure>
             </div>
         </section>
 
         <section class="contact-form">
             <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-            <form action="#" method="post" novalidate>
-                <div class="form-row">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-                <div class="form-row">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <fieldset class="form-fieldset">
-                    <legend>Purpose of Your Message</legend>
-
-                    <div class="radio-row">
-                        <label>
-                            <input type="radio" name="purpose" value="general" required>
-                            General inquiry
-                        </label>
-
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
-                            Reservation question
-                        </label>
-
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
-                            Website suggestion
-                        </label>
-                    </div>
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label for="purpose-general"><input id="purpose-general" type="radio" name="purpose" value="general"
+                            required> General Inquiry</label>
+                    <label for="purpose-reservation"><input id="purpose-reservation" type="radio" name="purpose"
+                            value="reservation"> Reservation Question</label>
+                    <label for="purpose-website"><input id="purpose-website" type="radio" name="purpose"
+                            value="website"> Website Suggestion</label>
                 </fieldset>
 
-                <div class="form-row">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-                <div class="form-row checkbox-row">
-                    <label for="subscribe">
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-                </div>
+                <label class="newsletter"><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Please
+                    subscribe me to
+                    the monthly newsletter</label>
 
-                <div class="form-row">
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </div>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <p>&copy; 2025 White Water Rafting Co. | George Adaji</p>
-
-            <nav class="socialmedia" aria-label="Social media links">
-                <a href="https://facebook.com" aria-label="Facebook">
-                    <img src="images/facebook.jpg" alt="Facebook" class="social-icon">
-                </a>
-                <a href="https://twitter.com" aria-label="Twitter">
-                    <img src="images/twitter.jpg" alt="Twitter" class="social-icon">
-                </a>
-                <a href="https://instagram.com" aria-label="Instagram">
-                    <img src="images/instagram.jpg" alt="Instagram" class="social-icon">
-                </a>
-            </nav>
-        </div>
+    <footer>
+        <p>&copy; 2025 White Water Rafting Co. | George Adaji</p>
+        <nav class="socialmedia" aria-label="Social media">
+            <a href="#"><img src="images/facebook.jpg" alt="Visit our Facebook page" loading="lazy"
+                    decoding="async"></a>
+            <a href="#"><img src="images/twitter.jpg" alt="Follow us on Twitter" loading="lazy" decoding="async"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Check our Instagram" loading="lazy" decoding="async"></a>
+        </nav>
     </footer>
-</body>
-
-</html>

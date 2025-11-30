@@ -2,72 +2,66 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - White Water Rafting</title>
     <meta name="description"
-        content="Learn about our rafting company's history, mission, and adventures. Experience the thrill of white water rafting with expert guides.">
+        content="Discover White Water Rafting Co.—our history, mission, guides, and safety focus. Learn how we deliver unforgettable white water adventures for all experience levels.">
     <meta name="author" content="George Adaji">
+    <title>About Us: White Water Rafting Co.</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <div class="header-grid">
-            <img src="images/logo.jpg" alt="White Water Rafting Company Logo" width="100">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
+        <img src="images/logo.jpg" alt="White Water Rafting Company Logo" class="logo">
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Exciting white water rafting adventure on a wild river">
-            <h1>White Water Rafting Co.</h1>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Exciting white water rafting adventure on a wild river" class="hero-img">
+            <h1>About Us: White Water Rafting Co.</h1>
             <article>
-                <img src="images/happy-client.jpg" alt="Happy client enjoying rafting experience">
-                <p>Our mission is to provide safe, thrilling white water rafting experiences that connect people
-                    with nature and create lifelong memories.</p>
+                <img src="images/happy-client.jpg" alt="Happy client enjoying rafting experience" loading="lazy"
+                    decoding="async">
+                <p>Join us for an unforgettable adventure on the wildest rivers. Safety and fun guaranteed!</p>
             </article>
-        </div>
-
-        <section class="history">
-            <h2>History</h2>
-            <div class="history-content">
-                <p>Founded in 1995, our company began with a passion for adventure and a love for wild rivers. What
-                    started as a small family operation has grown into one of the region's most trusted rafting
-                    outfitters, guiding thousands of adventurers through unforgettable experiences.</p>
-                <img src="images/history-rafting.jpg" alt="Historical rafting photo">
-                <p>Over the years, we've expanded our operations to include multiple river routes and trained dozens of
-                    expert guides who share our commitment to safety and environmental stewardship.</p>
-            </div>
         </section>
 
-        <section class="adventures">
+        <section id="history">
+            <h2>History</h2>
+            <p>Our rafting company was founded to provide thrilling white water adventures while maintaining a focus on
+                safety and sustainability. Over the years, we've guided thousands of adventurers through some of the
+                world's most exciting rapids.</p>
+            <img src="images/history-rafting.jpg" alt="Historical rafting photo" loading="lazy" decoding="async">
+        </section>
+
+        <section id="adventures">
             <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
+            <div class="adventures">
                 <figure>
-                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo rapids">
+                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo rapids" loading="lazy" decoding="async">
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting2.jpg" alt="Big Mallard rapids">
+                    <img src="images/rafting2.jpg" alt="Big Mallard rapids" loading="lazy" decoding="async">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                    <img src="images/rafting3.jpg" alt="Half Day Adventure" loading="lazy" decoding="async">
                     <figcaption>Half Day Adventure</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting4.jpg" alt="Wild Rapids">
+                    <img src="images/rafting4.jpg" alt="Wild Rapids" loading="lazy" decoding="async">
                     <figcaption>Wild Rapids</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting5.jpg" alt="River Canyon Run">
+                    <img src="images/rafting5.jpg" alt="River Canyon Run" loading="lazy" decoding="async">
                     <figcaption>River Canyon Run</figcaption>
                 </figure>
             </div>
@@ -75,17 +69,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 White Water Rafting Co. | George Adaji</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.jpg" alt="Visit our Facebook page" width="30">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.jpg" alt="Follow us on Twitter" width="30">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Check our Instagram" width="30">
-            </a>
+        <p>© 2025 White Water Rafting Co. | George Adaji</p>
+        <nav class="socialmedia" aria-label="Social media">
+            <a href="#"><img src="images/facebook.jpg" alt="Visit our Facebook page" loading="lazy"
+                    decoding="async"></a>
+            <a href="#"><img src="images/twitter.jpg" alt="Follow us on Twitter" loading="lazy" decoding="async"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Check our Instagram" loading="lazy" decoding="async"></a>
         </nav>
     </footer>
 </body>
