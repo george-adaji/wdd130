@@ -5,7 +5,9 @@
   --body-font: Georgia, serif;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,16 +62,27 @@ main {
 .hero h1,
 .hero article {
   position: absolute;
-  top: 20px;
-  left: 20px;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  top: 20px;
+  left: 20px;
+  font-family: var(--heading-font);
+  font-size: 2em;
 }
 
 .hero article {
   top: 80px;
   right: 20px;
   width: 300px;
+}
+
+.hero article img {
+  width: 100%;
+  height: auto;
+  float: right;
 }
 
 section {
@@ -89,6 +102,10 @@ section h2 {
   margin-top: 20px;
 }
 
+.adventure-grid figure {
+  text-align: center;
+}
+
 .adventure-grid img {
   width: 100%;
   height: auto;
@@ -96,7 +113,6 @@ section h2 {
 }
 
 figcaption {
-  text-align: center;
   font-style: italic;
   margin-top: 5px;
 }
