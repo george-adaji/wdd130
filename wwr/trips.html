@@ -1,114 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>White Water Rafting | Trips</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>White Water Rafting — Trips</title>
     <meta name="description"
-        content="Explore guided white water rafting trips for all adventure levels. Book beginner, intermediate, and advanced trips.">
-    <link rel="stylesheet" href="rafting.css">
+        content="Detailed descriptions and booking info for our beginner, intermediate, and expert white water rafting trips. See trip lengths, difficulty, and prices." />
+    <link rel="stylesheet" href="rafting.css" />
 </head>
 
 <body>
-
-    <!-- HEADER -->
-    <header>
-        <img src="images/logo.jpg" alt="Rafting Site Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="site-title"><a href="index.html">WWR Rafting Co.</a></h1>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html" aria-current="page">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="trips-page">
+    <main class="container trips-main">
+        <h2>Our Trips</h2>
+        <p>Choose a trip for your skill level. Click contact to book or ask questions.</p>
+        <p><a class="btn" href="contact.html">Contact Us to Book</a></p>
 
-        <!-- CTA BANNER -->
-        <section class="trip-cta">
-            <h1>Choose Your Rafting Adventure</h1>
-            <p>Have questions or want to book your experience?</p>
-            <a href="contact.html" class="cta-button">Contact Us</a>
+        <!-- Trip cards -->
+        <section class="trip-cards">
+            <article class="trip">
+                <img src="images/trip-beginner.jpg" alt="Beginner rafting trip" />
+                <h3>Beginner: River Breeze (Half Day)</h3>
+                <p>Distance: 8 km · Duration: 3–4 hours · Difficulty: Level 2</p>
+                <p>Perfect for first-timers. Calm stretches with short fun rapids, guided float, and beginner
+                    instruction.</p>
+            </article>
+
+            <article class="trip">
+                <img src="images/trip-intermediate.jpg" alt="Intermediate trip" />
+                <h3>Intermediate: Canyon Run (Full Day)</h3>
+                <p>Distance: 18 km · Duration: 6–8 hours · Difficulty: Level 3–4</p>
+                <p>Longer sections, technical rapids, scenic canyon views, portages where required. Good fitness
+                    recommended.</p>
+            </article>
+
+            <article class="trip">
+                <img src="images/trip-expert.jpg" alt="Expert white water rapids" />
+                <h3>Expert: Rapids Prime (Multi-Day)</h3>
+                <p>Distance: 40+ km · Duration: 2–3 days · Difficulty: Level 5</p>
+                <p>For experienced paddlers only. Remote sections, Class 5 rapids, expedition-style camping,
+                    rescue-trained guides.</p>
+            </article>
         </section>
 
-        <!-- TRIP DESCRIPTIONS -->
-        <section class="trip-descriptions">
-            <h2>Our Trips</h2>
-
-            <article class="trip-card">
-                <img src="images/trip1.jpg" alt="Beginner Rafting Trip">
-                <h3>Beginner Rapids — Family Adventure</h3>
-                <p>Perfect for families and first-timers! This 2-hour adventure takes you through gentle rapids
-                    with scenic views. Professional guides ensure a fun and safe experience for all ages.</p>
-            </article>
-
-            <article class="trip-card">
-                <img src="images/trip2.jpg" alt="Intermediate Rafting Trip">
-                <h3>Intermediate Rapids — Thrill Seeker</h3>
-                <p>A balanced mix of excitement and challenge. Enjoy fast waters and moderate drops along a 7-km
-                    route. Ideal for people looking for something more intense than the beginner level.</p>
-            </article>
-
-            <article class="trip-card">
-                <img src="images/trip3.jpg" alt="Advanced Rafting Trip">
-                <h3>Advanced Rapids — Extreme Challenge</h3>
-                <p>For experienced rafters only. This trip includes powerful currents and steep drops. Our expert
-                    guides lead the way to ensure safety while giving you the adrenaline rush you came for!</p>
-            </article>
-
-        </section>
-
-        <!-- TRIPS TABLE -->
+        <!-- Trips table -->
         <section class="trips-table">
-            <h2>Available Rafting Trips</h2>
-
+            <h3>Trip Summary</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Trip Name</th>
-                        <th>Difficulty</th>
+                        <th>Trip</th>
                         <th>Duration</th>
-                        <th>Group Size</th>
-                        <th>Price</th>
+                        <th>Difficulty</th>
+                        <th>Price (per person)</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
-                        <td>Beginner Rapids</td>
-                        <td>Easy</td>
-                        <td>2 Hours</td>
-                        <td>Up to 10</td>
-                        <td>$45</td>
+                        <td>River Breeze</td>
+                        <td>3–4 hours</td>
+                        <td>Level 2</td>
+                        <td>₦12,000</td>
                     </tr>
                     <tr>
-                        <td>Intermediate Thrill Ride</td>
-                        <td>Medium</td>
-                        <td>3 Hours</td>
-                        <td>Up to 8</td>
-                        <td>$75</td>
+                        <td>Canyon Run</td>
+                        <td>6–8 hours</td>
+                        <td>Level 3–4</td>
+                        <td>₦25,000</td>
                     </tr>
                     <tr>
-                        <td>Advanced Extreme Challenge</td>
-                        <td>Hard</td>
-                        <td>4 Hours</td>
-                        <td>Up to 6</td>
-                        <td>$120</td>
+                        <td>Rapids Prime</td>
+                        <td>2–3 days</td>
+                        <td>Level 5</td>
+                        <td>₦75,000</td>
                     </tr>
                 </tbody>
             </table>
+            <p class="note">Prices exclude travel to launch point and optional equipment rental.</p>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 White Water Rafting</p>
-        <p><a href="privacy.html">Privacy Policy</a></p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year2"></span> WWR Rafting Co. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
+    <script>
+        document.getElementById('year2').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
